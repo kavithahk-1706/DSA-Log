@@ -4,29 +4,33 @@ import java.util.ArrayList;
 public class BinarySearchAlg{
 
     public static ArrayList<Integer> binarySearch(ArrayList<Integer> arr, int l, int r, int k){
+
+        //Track indexes in an ArrayList
         ArrayList<Integer> indexes=new ArrayList<>();
+        //as long as the left pointer is before the right pointer
         if(l<r){
+            //define midpoint to divide the array recursively
             int mid=(l+r)/2;
-            if(k==arr.get(mid)){
-                indexes.add(mid);
-                int i=mid-1;
+            if(k==arr.get(mid)){ //use get for ArrayList instead of []
+                indexes.add(mid); //use add for ArrayList instead of []
+                int i=mid-1; //check for the same element at indices before mid
                 while(i>=0 && arr.get(i)==k){
                     indexes.add(i);
                     i--;
                 }
-                int j=mid+1;
+                int j=mid+1; //check for the same element at indices after mid
                 while(j<arr.size() && arr.get(i)==k){
                     indexes.add(j);
                     j++;
                 }
                 
-            }else if(k<arr.get(mid)){
-                return binarySearch(arr,l,mid,k);
-            }else{
-                return binarySearch(arr,mid+1,r,k);
+            }else if(k<arr.get(mid)){ //if mid is greater than required element
+                return binarySearch(arr,l,mid,k); //recursively call the function to the left
+            }else{ //if mid is less than required element
+                return binarySearch(arr,mid+1,r,k); //recursively call the function to the right
             }
         } 
-        return indexes;          
+        return indexes; //return ArrayList of indexes   
         }
     
 
