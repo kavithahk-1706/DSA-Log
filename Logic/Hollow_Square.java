@@ -3,10 +3,10 @@ public class Hollow_Square{
         System.out.println("Pattern: Hollow Square");
         for(int i=1;i<=n;i++){
             for(int j=1;j<=n;j++){
-                if(j==1||j==n){
-                    System.out.println("*");
+                if(j==1||j==n||i==1||i==n){
+                    System.out.print("* ");
                 }else{
-                    System.out.println(" ");
+                    System.out.print("  ");
                 }
             }
             System.out.println();
