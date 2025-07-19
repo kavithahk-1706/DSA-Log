@@ -46,7 +46,8 @@ public class QuickSortAlg{
         int pivotVal=arr[high];
         //initializa i as low-1 (before the array starts)
         int i=low-1;
-        //traverse through the array
+        //traverse through the array until the second last element, as arr[high] is the pivot
+        //and we don't want to include it in our traversal
         for(int j=low;j<high;j++){
             //if an element is less than the pivot's value 
             //then increment i and swap arr[i] with current element
