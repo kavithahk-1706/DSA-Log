@@ -54,4 +54,11 @@ DSA Progress Log
 
         
 
-        
+-> 19th July 2025
+    
+    - Three Sum Problem with Merge Sort (under Problems/)
+    - Three Sum Problem with Quick Sort (under Problems/)
+
+    - Important Points:
+        - Be careful with the sorting algorithms, you're more likely to make mistakes there
+        - Especially with the indices and ranges
