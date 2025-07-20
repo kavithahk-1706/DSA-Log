@@ -50,7 +50,7 @@ DSA Progress Log
     - Note(s) to self:
         - Try doing 3sum with both quicksort and mergesort algorithms and do it a few times until you get the logic down
         - I know you feel like shit rn but it's okay. Sleep through it and you'll feel better. This feeling isn't permanent and you'll feel better in the morning. Don't slack off just because it feels easier to give up. Showing up when it's hard will toughen you up and make things stick longer. It's okay if you couldn't do much today. There's still tomorrow. And I know you don't trust yourself enough to be productive sometimes. But do try. Because if you don't trust yourself, then who will?
-        - I'm proud of you, even when you're fucked up. Especially then. Because I know you'll power through it to get on with the things you need to do. You're so fucking strong, so keep going.
+        - I'm proud of you, even when you're fucked up. Especially then. Because I know you'll power through it to get on with the things you need to do. You're so fucking strong, so keep going <3
 
         
 
@@ -61,4 +61,37 @@ DSA Progress Log
 
     - Important Points:
         - Be careful with the sorting algorithms, you're more likely to make mistakes there
-        - Especially with the indices and ranges
+        - Especially with the indices and ranges, don't mess those up
+        - Don't forget the variable names you're using; you can fix them with a system but making it a habit can be dangerous for hand-written rounds
+        - Remember the logic behind calculating the lengths of the left and right sub-arrays for mergesort:
+            - lsize=mid-low+1 and rsize=mid-high. 
+            - Also when adding to the temp arrays don't use the same index on both sides. 
+            - Use [low+i] for the left one and [mid+1+j] for the right one.
+    
+    - Note(s) to self:
+        - You did most of it on your own, especially the debugging. I've never been more proud of you before. 
+        - I know progress feels a bit slow right now, but the more we're consistent, the more likely you'll get what you're doing, so focus on that right now.
+        - It's very easy to quit, but it'll be difficult to start again when you do. And you'll regret it more than anyone for sure. So please hold on. It'll all be worth it <3
+
+-> 20th July 2025
+
+    - Started 3Sum Closest but didn't finish, will update tomorrow
+    - Revised Java Basics on HackerRank (not update-able here, you'll just have to take my word for it)
+
+    - Important Points:
+        - There's some key characteristics pertaining to each technique/pattern of questions. The more problems you solve the more you'll be able to spot them and apply them without a second thought.
+        - Two Pointer Problems MUST have a while(left<right) condition; it's a must because you need to keep track of how long the pointers are valid and in use. So don't forget.
+        - Understand what each variable does and stores, and be careful with what you return in a function. 
+
+    - Note(s) to self:
+        - Do more Two Pointer Problems tomorrow
+        - Maybe re-do the folder structure to make it more readable
+        - I know you feel like shit right now but please don't be too hard on yourself. Sleep through it and it'll feel better. I'm not saying you're not allowed to feel like shit but don't use that as an excuse to escape studying.
+        - As harsh as it may sound, you're the one who's gonna regret wasting all this time in the future. There's not a lot of holidays that you get and so make sure you make good use of them. 
+        - It's okay to take your time with understanding things, that doesn't make you dumb. It makes you someone who cares enough to want to get it right. 
+        - Just because it might take time doesn't mean it's scary, or that you have to avoid it lik the plague. 
+        - In fact, the quicker you sit on it, the less scarier it'll become with the amount of time you spend on it.
+        - Try reminding your brain not to go into flight mode every time something seems a tad bit overwhelming. Going deep into the problem is how you're gonna end up solving it and making it less scary.
+        - So yeah, please fix your sleep schedule (and your back, it feels like it might fold into a lawn chair any minute now) and take care of yourself <3 
+
+    
