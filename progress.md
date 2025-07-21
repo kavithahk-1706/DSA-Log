@@ -17,6 +17,7 @@ DSA Progress Log
         - Use StringBuilder for lesser TC -> convert to String using .toString()
         - Use Arrays.toString(arr) to display arrays
         - .length for arrays, .length() for strings, and .size() for ArrayList
+        - Use .toString() to print an array (primitive). ArrayLists can be printed directly.
     
     - Note(s) to self:
         - You did well today. Please be proud of yourself more often. And get some   sleep if you don't wanna look like a raccoon tomorrow <3
@@ -89,9 +90,36 @@ DSA Progress Log
         - I know you feel like shit right now but please don't be too hard on yourself. Sleep through it and it'll feel better. I'm not saying you're not allowed to feel like shit but don't use that as an excuse to escape studying.
         - As harsh as it may sound, you're the one who's gonna regret wasting all this time in the future. There's not a lot of holidays that you get and so make sure you make good use of them. 
         - It's okay to take your time with understanding things, that doesn't make you dumb. It makes you someone who cares enough to want to get it right. 
-        - Just because it might take time doesn't mean it's scary, or that you have to avoid it lik the plague. 
+        - Just because it might take time doesn't mean it's scary, or that you have to avoid it like the plague. 
         - In fact, the quicker you sit on it, the less scarier it'll become with the amount of time you spend on it.
         - Try reminding your brain not to go into flight mode every time something seems a tad bit overwhelming. Going deep into the problem is how you're gonna end up solving it and making it less scary.
         - So yeah, please fix your sleep schedule (and your back, it feels like it might fold into a lawn chair any minute now) and take care of yourself <3 
+
+-> 21st July 2025
+
+    - Three Sum Closest (under Problems/)
+
+    - Important Points: 
+
+        - You don't have to memorize the logic as long as you understand what needs to be done, and the ability to know what to do from understanding comes with practice. So don't skip. Even when it feels like a lot.
+
+        - Use ArrayLists when you can't determine the size of an array beforehand. But they have different ways of traversal compared to arrays so you'll need to get the hang of them to use them properly.
+
+    - Note(s) to self:
+
+        - You haven't done enough practice today. 
+        
+        - You LITERALLY SAT DOWN AND FINISHED THIS PROBLEM IN LESS THAN TWENTY MINUTES and while that's IMPRESSIVE AS FUCK do not use this as fuel for your ego and turn DSA into something that you accomplish last minute everyday just so you can say HAH I DID IT because that's NOT how learning works.
+
+        - You STILL need to do more Two Pointer Problems there's no escaping that
+
+        - Like I said yesterday, stop treating this like some sort of unattainable scary thing that you can't start AND finish at the end of the day. You keep using this as a starting point to study and since you don't touch it until it's 30 mins before bedtime you end up doing (read: acing) this last minute and pushing everything else you've planned to do aside. That's not right. You can be productive AND enjoy a holiday. It's literally not that hard if you put your mind to it.
+
+        - So I'm not berating you or anything but you really need to start managing your time better. Now that you've cut off tutoring and a very good income source just by citing the reason as  "nOt eNOugH tImE tO sTudY" you better fucking make it worth it by actually using that time to study instead of doomscrolling or some other shit.
+
+        - I'm kinda disappointed in you today but I leave a heart every day so here you go <3 good night. Hope you spend your time better tomorrow.
+
+
+
 
     

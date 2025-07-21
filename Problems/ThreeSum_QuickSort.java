@@ -121,8 +121,6 @@ public class ThreeSum_QuickSort {
     public static void main(String[] args){
        int[] arr={-2,0,1,1,-2,2,4,3,-3};
        System.out.println("Original Array: "+Arrays.toString(arr));
-       quickSort(arr,0,arr.length-1);
-       System.out.println("Sorted Array: "+Arrays.toString(arr));
        System.out.println("Triplets returning sum 0: "+threeSum(arr));
     }
 

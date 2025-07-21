@@ -127,8 +127,6 @@ public class ThreeSum_MergeSort{
     public static void main(String[] args){
         int[] nums={2,3,-1,-2,0,-2,4,-6,3};
         System.out.println("Original Array: "+Arrays.toString(nums));
-        mergeSort(nums,0,nums.length-1);
-        System.out.println("Sorted Array: "+Arrays.toString(nums));
         System.out.println("Triplets: "+threeSum(nums));
 
     }
