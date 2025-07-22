@@ -164,6 +164,27 @@ and `arr[i]` for arrays
 
 ### Things I did today
 - Re-formatted [___`progress.md`___](progress.md) and [___`README.md`___](README.md) _(now it looks like I have my life put together YAY)_
+- [__Remove Duplicates in a Sorted Array__ _(Under Problems/)_
+](Problems/Remove_Duplicates_Sorted.java) 
+
+### Key Takeaways
+- [__Remove Duplicates in a Sorted Array__ _(Under Problems/)_
+](Problems/Remove_Duplicates_Sorted.java) uses Two Pointer Approach. _(FINALLY)_
+- Two Pointer doesn't always necessarily mean there's a left and right pointer on either side of the array.
+- They might not always be explicitly defined, i.e., they may also be loop variables.
+- It's better to consider them as two different variables that are defined to do two separate tasks.
+- A single element is already sorted and unique.
+- It's better to compare using previous values than with the next value as the latter can cause IndexOutofBounds errors
+
+### Things to do tomorrow
+- Some more Two Pointer Problems.
+- Try exploring Prefix Sum, Sliding Window, and HeapSort after Two Pointer.
+- Write the Time Complexity, Space Complexity, and Logic used under each problem logged so far.
+
+### Note(s) to self
+- It's already pretty late so go to sleep lmfao
+- You did a lot today even if it doesn't feel like it, so take it slow and go easy on yourself.
+- I'm proud of you, really. Okay gn now before you get scolded <3
 
 
     
