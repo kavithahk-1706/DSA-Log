@@ -17,11 +17,27 @@
 
 ### Things I did today
 - [__Binary Search__  _(under Algorithms/)_](Algorithms/BinarySearchAlg.java)
+    - *__Design:__ Divide and Conquer*
+
+        - This involves dividing a problem into multiple smaller instances recursively until it hits the base case, then solving it at the lowest level.
+    
+    - *__Time Complexity:__ O(log n)*
+    
+        - The traversal continues with the division of the array into two parts, __so repeated division by 2__ happens until the no. of elements is 1.
+    
+        - If n is the number of elements originally, dividing it multiple times gives us n/2, n/4, n/8...and so on. This can be expressed as 2^k where k is the number of iterations.
+
+        - So the condition becomes __n/(2^k)=1, solving which we get k as log n__ as our time complexity.
+    - *__Space Complexity:__ O(1)*
+        - We don't use any extra/auxiliary space here so the space complexity is O(1).
+
 - [__MergeSort__ _(under Algorithms/)_](Algorithms/MergeSortAlg.java)
 - [__TwoSum__ _(under Problems/)_](Problems/TwoSum.java)
 - [__Longest Common Prefix__ _(under Problems/)_](Problems/LongestStrPrefix.java)
 - [__Filled Square__ _(under Logic/)_](Logic/Filled_Square.java)
 - [__Hollow Square__ _(under Logic/)_](Logic/Hollow_Square.java)
+
+
 
 ### Key Takeaways
 - `MergeSort` does not return anything because it __sorts in place__
