@@ -16,20 +16,6 @@
 ## 16th July, 2025
 
 ### Things I did today
-- [__Binary Search__  _(under Algorithms/)_](Algorithms/BinarySearchAlg.java)
-    - *__Design:__ Divide and Conquer*
-
-        - This involves dividing a problem into multiple smaller instances recursively until it hits the base case, then solving it at the lowest level.
-    
-    - *__Time Complexity:__ O(log n)*
-    
-        - The traversal continues with the division of the array into two parts, __so repeated division by 2__ happens until the no. of elements is 1.
-    
-        - If n is the number of elements originally, dividing it multiple times gives us n/2, n/4, n/8...and so on. This can be expressed as 2^k where k is the number of iterations.
-
-        - So the condition becomes __n/(2^k)=1, solving which we get k as log n__ as our time complexity.
-    - *__Space Complexity:__ O(1)*
-        - We don't use any extra/auxiliary space here so the space complexity is O(1).
 
 - [__MergeSort__ _(under Algorithms/)_](Algorithms/MergeSortAlg.java)
 - [__TwoSum__ _(under Problems/)_](Problems/TwoSum.java)
@@ -202,5 +188,92 @@ and `arr[i]` for arrays
 - You did a lot today even if it doesn't feel like it, so take it slow and go easy on yourself.
 - I'm proud of you, really. Okay gn now before you get scolded <3
 
+## 23rd July 2025
 
+### Things I did today
+
+- Fixed/added the following:
+
+- [__Binary Search (Recursive)__ _(under Algorithms/)_](Algorithms/BinarySearch_Recursive.java)
+
+    - *__Design:__ Divide and Conquer*
+
+        - This involves dividing a problem into multiple smaller instances recursively until it hits the base case, then solving it at the lowest level.
+
+    - *__Basic Algorithm:__*
+   
+        - Start with the middle element
+
+        - Depending on how the middle element compares to the target (>,<,=)
+
+        - Shrink the range of elements to be checked by modifying the left and right pointers using recursive left and right subarray calls
+
+        - If at any point the value of mid happens to be the target, return the index mid
+
+        - Else, return -1 at the end of traversal
     
+    - *__Time Complexity:__ O(log n)*
+    
+        - The traversal continues with the division of the array into two parts, __so repeated division by 2__ happens until the no. of elements is 1.
+    
+        - If n is the number of elements originally, dividing it multiple times gives us n/2, n/4, n/8...and so on. This can be expressed as 2^k where k is the number of iterations.
+
+        - So the condition becomes __n/(2^k)=1, solving which we get k as log n__ as our time complexity.
+
+    - *__Space Complexity:__ O(1)*
+
+        - We don't use any extra/auxiliary space here  since we only use two pointers and modify them throughout; so the space complexity is O(1).
+
+- [__Binary Search (Iterative)__ _(under Algorithms/)_](Algorithms/BinarySearch_Iterative.java)
+
+    - *__Design:__ Divide and Conquer*
+
+    - *__Basic Algorithm:__*
+   
+       - Same as above
+
+    - *__Time Complexity:__ O(log n)*
+    
+        - Same as above
+
+    - *__Space Complexity:__ O(log n)*
+
+        - Recursion involves a stack of function calls that are called in pre-order and executed in post-order. As a result, at each recursive level a new array is returned and the function is executed upon it.
+        - The number of such arrays generated follows a similar logic as the time complexity, i.e., continuously divides the length of the array by 2 until there is one element left. 
+        - Following the same logic, we get the space complexity as O(log n).
+
+- [__Binary Search - First & Last Occurrence (Iterative)__ _(under Algorithms/)_](Algorithms/BinarySearch_FirstnLastOccurrence.java)
+
+   - *__Design:__ Divide and Conquer*
+
+    - *__Basic Algorithm:__*
+
+        - Carry out the normal procedure of an iterative binary search using divide and conquer
+        - Use two functions - one to track the first occurrence and the other to track the last occurrence
+        - If at any point nums[mid]==target, don't stop and return; rather, continue searching
+        - For first occurrence, search the subarray to the left of mid
+        - For last occurrence, search the subarray to the right of mid
+
+    - *__Time Complexity:__ O(log n)*
+    
+        - Same as above 
+    - *__Space Complexity:__ O(1)*
+        - As this uses the iterative approach, there's no recursive function stack constantly generating new subarrays,
+        - Whenever we need to shrink the range of search, we simply modify the left and right pointers as per requirement, which take up constant space.
+        - Thus, as a whole, this algorithm takes up O(1) space complexity
+
+### Key Takeaways
+- The Binary Search Algorithm you did earlier was essentially pointless since you implemented it with recursion to find the first/last occurrence AND used an extra ArrayList (WHY)
+- Iterative approaches save time and space complexity; while recursion is cool and fancy, the function stack takes up more space so might not be preferred in instances where you can use the iterative approach
+- Searching algorithms use the base case as `if(left<right)` because `left==right` implies that there's one element, and that one element is sorted by default so doesn't need extra checking. Besides, when you return back to the recursive case, you start with a single element and for that this condition is perfect.
+- HOWEVER, searching algorithms NEED to have an equality (`if(left<=right)` or `while(left<=right)`) because you need to account for __single element arrays__. Blindly using the same base case as in sorting will lead to this edge case failing.
+
+### Things to do tomorrow
+- Design, Basic Algorithm, Time & Space Complexity for the problems done so far
+- Two Pointer Problems
+
+### Note(s) to self 
+- You understood where you went wrong and corrected it, proud of you <3
+- The more mistakes you make, the better the concepts will stick because you'll know exactly WHY the other things won't work, so don't beat yourself up over mistakes or call yourself stupid.
+- Try to get things done earlier tomorrow so you won't have to stay up so late
+- Goodnight sleeptight <3
