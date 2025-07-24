@@ -18,6 +18,32 @@
 ### Things I did today
 
 - [__MergeSort__ _(under Algorithms/)_](Algorithms/MergeSortAlg.java)
+
+     - *__Design:__ Divide and Conquer*
+
+        - This involves dividing a problem into multiple smaller instances recursively until it hits the base case, then solving it at the lowest level.
+
+    - ___Basic Algorithm:___
+    
+        -  Use two functions, mergeSort and merge
+        - To handle the dividing and merging parts of the technique reespectively
+        - The mergeSort function recursively alls itself for the left and right halves of the array
+        - Each half is recursively divided into subsequent halves until there is one element left
+        - Then the merge function is executed to merge the two subarrays obtained at every level after comparing elements
+        - Temp arrays are used to store the left and right sorted subarrays, but the final array is sorted in the same variable
+        - Since we're using auxiliary space, it is not inplace
+    
+    - *__Time Complexity:__ O(n log n)*
+        - The `mergeSort` logic uses a `log n` time complexity to recursively divide the array into two halves until the number of elements is 1
+        - The `merge` logic iterates `n` times to combine the two sorted sub arrays after comparison
+        - Since all three (the two recursive divisions, and the merging) occur at every recursive step, the time complexities of both steps are multiplied to give __O(n log n).__
+
+    - *__Space Complexity__: O(n)*
+        - Every _divide and conquer_ problem involves recursively dividing a larger instance of the problem into smaller  halves, meaning that there's a recursive stack that takes up a space of `log n` for every such problem.
+        - Apart from this, mergeSort makes use of two temp arrays, the left and right subarrays, to store elements and merge them back up the recursive stack. 
+        - These subarrays, though created at each recursive level, are then freed once the function is executed, and at every level, their total space adds up to `O(n)`.
+        - As in the asymptotic notation, we consider only the greater element of the time/space complexity, __the actual space complexity of O(n + log n) gets reduced to O(n) as n>log n.__
+
 - [__TwoSum__ _(under Problems/)_](Problems/TwoSum.java)
 - [__Longest Common Prefix__ _(under Problems/)_](Problems/LongestStrPrefix.java)
 - [__Filled Square__ _(under Logic/)_](Logic/Filled_Square.java)
@@ -198,8 +224,6 @@ and `arr[i]` for arrays
 
     - *__Design:__ Divide and Conquer*
 
-        - This involves dividing a problem into multiple smaller instances recursively until it hits the base case, then solving it at the lowest level.
-
     - *__Basic Algorithm:__*
    
         - Start with the middle element
@@ -277,3 +301,26 @@ and `arr[i]` for arrays
 - The more mistakes you make, the better the concepts will stick because you'll know exactly WHY the other things won't work, so don't beat yourself up over mistakes or call yourself stupid.
 - Try to get things done earlier tomorrow so you won't have to stay up so late
 - Goodnight sleeptight <3
+
+## 24th July 2025
+
+### Things I did today
+- Revised [__MergeSort__ _(under Algorithms/)_](Algorithms/MergeSortAlg.java)
+- [__Updated MergeSort's Basic Algorithm, Time Complexity, and Space Complexity__ _(under 17th July, 2025, progress.md)_](#things-i-did-today)
+- Nothing other than that, honestly. Not to give excuses but the net isn't working and my back is broken- also the laptop's hanging and it's pretty late already
+- I did do a bit on recurrence relations though, and cleared up some doubts caused by today's very confusing class in college
+
+### Key Takeaways
+- Any auxiliary space used that is NOT given implies that the problem is solved out of place
+- A recursive stack using Divide and Conquer takes up space O(log n)
+- If two __separate things take place on the same level/simultaneously, multiply their TCs/SCs__
+- If they're __independent actions, add their TCs/SCs and only express in terms of the greater term__
+
+### Things to do tomorrow
+- Update the rest of the TCs and SCs
+- Some more Two Pointer Problems
+
+### Note(s) to self
+- I know you didn't do much today but there wasn't much you could do about it. You still managed to clear up some good doubts/confusions that would've made things worse if you chose to skip. 
+- Some progress >>>>>> none. So good job. Proud of you.
+- Sleep early tonight <3
