@@ -1,5 +1,18 @@
 import java.util.Arrays;
 
+/* Problem Statement:
+ * Given an array of strings
+ * Return the longest string which is the common prefix for every tring in the array
+ */
+
+ /* Basic Algorithm
+  * Iterate over the letters in the first word of the array
+  * For each such character iterate over the rest of the words of the array 
+  * And check if the ith character of the first word is equal to the ith character of every other word in the array
+  * If yes then add that element to the String
+  * If there's an inequality at any point/one of the string lengths runs out, return the String to stop adding letters to it
+  */
+
 class LongestStrPrefix {
     public static String longestCommonPrefix(String[] strs) {
         //take first word from array
@@ -32,9 +45,11 @@ class LongestStrPrefix {
             prefix.append(character);
         }
 
+        //return the String version of the StringBuilder object
         return prefix.toString();
     }
 
+    //driver code
     public static void main(String[] args){
         String[] strs={"Stray Kids","Street Dancer", "Stratosphere","Straddler"};
         System.out.println("Original Array of Strings: "+Arrays.toString(strs));

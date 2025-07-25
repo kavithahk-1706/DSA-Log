@@ -9,6 +9,7 @@ import java.util.Arrays;
  * Temp arrays are used to store the left and right sorted subarrays, but the final array is sorted in the same variable
  * Since we're using auxiliary space, it is not inplace
  */
+
 public class MergeSortAlg{
 
     //main mergeSort function

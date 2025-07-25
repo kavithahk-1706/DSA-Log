@@ -11,10 +11,32 @@ Will I live up to it? We'll just have to see T__T
 - _Searching, Sorting, etc._
 #### [__Problems/__ ](Problems)
 - _Stuff I find on Leetcode_
-#### [__Logic/__ ](Logic)
-- _Pretty patterns and basic logic stuff_
+#### [__algorithms.md__](algorithms.md)
+- _Notes and stuff about the algorithms I encounter, including explanations on_
+
+    - _Design_
+
+    - _Basic Algorithm_
+
+    - _Time Complexity_
+
+    - _Space Complexity_
+
+#### [__problems.md__](problems.md)
+- _Notes and stuff about problems I see on LeetCode, including explanations on_
+
+    - _Problem Statement(s)_
+
+    - _Design_
+
+    - _Basic Algorithm_
+
+    - _Time Complexity_
+
+    - _Space Complexity_
+    
 #### [__progress.md__](progress.md)
-- _Daily logs, takeaways and notes_
+- _Daily logs, takeaways and note(s) to self (sometimes dramatic, sometimes therapeutic, but very much needed)_
 
 
 
