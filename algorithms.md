@@ -139,3 +139,76 @@
 - Some extra notes:
 
     - Usually for real world cases, __iterative__ binary search is preferred over recursive because of how it saves space due to the absence of memory-eating recursive stack functions.
+
+
+## [__Quick Sort with Lomuto's Division__](Algorithms/QuickSortAlg_Lomuto.java)
+
+- *__Design:__ Divide and Conquer*
+
+- *__Basic Algorithm:__*
+
+    - Pick a pivot element (usually the last element)
+
+    - If the pivot is not the last element, swap it with the last element and traverse from low to high-1
+
+    -  Use two pointers, one for traversing through the array (j) and the other to keep track of positions to the left of the pivot (i).
+
+    -  Every time an element is less than the pivot, increment i and swap the element's position with i
+
+    -  At the end of all the swapping, swap the pivot at the end with the element at i+1 to return pivot to its original position
+
+    -  Return i+1 as the point of partition
+
+    -  Recursively call quickSort for the left sub array and the right sub array EXCLUDING point of partition
+
+    - Continue the recursion until the base case is hit, i.e., the number of elements is 1
+
+- *__Time Complexity:__ O(n log n) (average case) or O(n^2) (worst case)*
+
+    - *__O(n log n)__ (When the pivot choice is good):*
+
+        - The Lomuto partition logic is non-recursive, but takes place n number of times under the `if(left<right)` condition
+
+        - The recursive calls of the left and right sub arrays (excluding the pivot element) take place log n times due to recursive division.
+
+        - Thus the overall time complexity becomes __O(n log n).__
+    
+    - *__O(n^2)__ (When the pivot choice is bad):*
+
+        - In case the pivot choice is either the largest/smallest element, it results in all the other elements being on its left/right side and the division will be completely uneven.
+
+        - As a result the iterations will go up to n-1 recursively, which means the time complexity can be approximated to __O(n^2)__, since there are n recursive levels and a length of traversal of n at each.
+
+        - Thus, it becomes very important to choose the right pivot. To avoid choosing a bad pivot, some techniques include:
+
+            - Randomized: Select a random element from the array. Efficient since the chances are lowered, but they're never zero.
+
+            - Median-of-three: Selects the middle value out of the first, middle, and last elements. A bit more efficient since there's no chance of either the largest/smallest element
+
+- *__Space Complexity:__ O(log n) (average case) or O(n)*
+
+    - *__O(log n)__ (When the pivot choice is good):*
+
+        - Quick Sort is an in-place algorithm as it does not use any auxiliary space to sort the array.
+
+        - The only space taken up is the space of the recursive stack, which has log n recursive calls stored in it, considering the pivot choice is good.
+
+        - Thus, the total space complexity is __O(log n)__.
+    
+    - *__O(n)__ (When the pivot choice is bad):*
+
+        - If the pivot choice is bad, i.e, either the largest/smallest element, then the number of recursive calls will be extended to n, as you'd approximately be executing n number of functions just to get to the base case, i.e, the length of elements being 1.
+
+        - Thus, in the worst case, the space complexity becomes __O(n)__.
+
+- Some extra note(s):
+
+    - There are two main techniques used in Quick Sort to perform divisions/partitions based on the pivot element: Lomuto's method (the above) and Hoare's method.
+
+    - Both lead to the same time and space complexity (given above), but the latter is considered more efficient.
+
+    - While Lomuto's method is easy to implement, it performs unnecessary swaps at every step where the current element is less than the pivot, leading to reduced efficiency.
+
+    - In practice, __Hoare's Method of Division__ is preferred due to its reduced number of swappings, as it only performs swaps when necessary.
+
+   

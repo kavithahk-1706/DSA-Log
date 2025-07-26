@@ -28,6 +28,8 @@
 
 - [25th July 2025](#25th-july-2025)
 
+- [26th July 2025](#26th-july-2025)
+
 ## 16th July, 2025
 
 ### Things I did today
@@ -72,10 +74,14 @@ and `arr[i]` for arrays
 ## 17th July 2025
 
 ### Things I did today
-- [__QuickSort__ _(under Algorithms/)_](Algorithms/QuickSortAlg.java)
+
+- [__QuickSort with Lomuto's Division__ _(under Algorithms/)_](Algorithms/QuickSortAlg_Lomuto.java)
+
+    - [_**Notes:** algorithms.md/Quick Sort with Lomuto's Division_](algorithms.md/#quick-sort-with-lomutos-division)
+
 
 ### Key Takeaways
-- `QuickSort` __uses a partition__ to divide the array into before and after, and THEN does a __recursive call on either side__. That's why you __don't include the element__ that `partition()` returns in either call.
+- `QuickSort` with Lomuto's division __uses a partition__ to divide the array into before and after, and THEN does a __recursive call on either side__. That's why you __don't include the element__ that `partition()` returns in either call.
 
 - The `pivotIndex` can be calculated as either randomized or using median-of-three. __Be careful when using median-of-three__ because the logic is easy to mess up.
 
@@ -86,6 +92,8 @@ and `arr[i]` for arrays
 - __`pivotVal` needs to be brought back__ from the very end after traversing through the array such that 
     - elements to the left of `pivotVal` are less than `pivotVal`
     - elements to the right of `pivotVal` are more than `pivotVal`
+
+- Lomuto's version is cool for understanding BUT swaps everything like an idiot and sucks with duplicates. There's a better version called Hoare's method which optimizes Quick Sort's division mechanism.
 
 ### Things to do tomorrow
 - Try implementing both `mergeSort` and `quickSort` in LeetCode problems that involve sorting.
@@ -384,7 +392,38 @@ and `arr[i]` for arrays
 
 - Pls go to sleep i beg u <3
 
+## 26th July 2025
+
+### Things I did today
+
+- Updated [__Notes on Quick Sort with Lomuto's Division__ _(under 17th July, 2025, progress.md)_](#things-i-did-today-1)
+
+### Key Takeaways
+
+- The quickSort method I worshipped till now (Lomuto) is not the best, apparently
+
+- The recursive relation includes steps with T(some n term) which denote recursive calls, and O(some n term) which denote non-recursive calls.
+
+- You can't always guarantee that the worst case for quick sort won't creep up in the recursive calls, but what you can do at best is make sure that it doesn't start with the worst case, because that makes it worse.
 
 
+### What I should do tomorrow
 
+- Finish Re-factoring and Re-formatting
+
+- Do Quick Sort with Hoare's Division
+
+- Two Pointer Problems (yes you've been postponing this for ages pls do something at least)
+
+## Note(s) to self
+
+- There's none because the battery is about to die and OH SHIT HIMMAT KILLED ANITA sorry wrong place to rant
+
+- PLS PLS commit asap
+
+- Also focus on understanding things and noting them down rather than simply going quickly for the hell of it
+
+- That said you can reformat and revise AND visit new problems at the same time you don't have to be like Changbin and be bad at multitasking
+
+- Okay goodnight it's 1 AM your sleep schedule is so fucked atp but honestly who cares it's Sunday tomorrow (or today- yeah because tomorrow is today) <3
 
