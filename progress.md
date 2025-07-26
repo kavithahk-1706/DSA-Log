@@ -415,7 +415,7 @@ and `arr[i]` for arrays
 
 - Two Pointer Problems (yes you've been postponing this for ages pls do something at least)
 
-## Note(s) to self
+### Note(s) to self
 
 - There's none because the battery is about to die and OH SHIT HIMMAT KILLED ANITA sorry wrong place to rant
 
