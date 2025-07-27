@@ -427,3 +427,67 @@ and `arr[i]` for arrays
 
 - Okay goodnight it's 1 AM your sleep schedule is so fucked atp but honestly who cares it's Sunday tomorrow (or today- yeah because tomorrow is today) <3
 
+
+## 27th July 2025
+
+### Things I did today
+
+- [__Quick Sort using Hoare's Division__ _(under Algorithms/)_](algorithms/QuickSortAlg_Hoare.java)
+
+- Started BFS but didn't finish, will finish tomorrow
+
+### Key Takeaways
+- __BFS:__
+    - BFS uses queues because it allows us to keep tracking the parents and appending the children/neighbors at the same time
+
+    - If you used a stack (like in DFS) you'd basically pop an element, append its children, then pop the last child you just appended and append its children and so on, which leads you down the rabbit hole of one single path and not all of them
+
+    - This doesn't guarantee that you reach the shortest path first, which is the whole point of BFS.
+
+    - With queues, you consider elements on the same level one after the other, and append their children only if the target is not yet found. This makes sure that as soon as we reach the target, we can stop our traversal and return the shortest path
+
+    - Snakes and Ladders is a great example of this
+
+- __Hoare and Quick Sort:__
+    - Hoare's Quick Sort IS A BITCH because it doesn't guarantee that the pivot is in its final position, so the element you return might as well fuck up your entire recursive case by returning the same range every single time
+
+    - I finally understood the point of do-while loops; in the context of Hoare's Division they make sure that the range in the recursive call is NEVER THE SAME because the increment/decrement of pointers i & j will happen AT LEAST ONCE irrespective of the condition
+
+    - This'll make sure that each recursive range is always lesser than the one before, so no stack overflow errors from hell
+
+    - Oh and DON'T EVER TRY TO IMPLEMENT ANYTHING IN JAVA SOLELY BASED ON ITS LOGIC IN PYTHON BECAUSE PYTHON IS A FUCKING ANGEL AND MAKES EVERYTHING SO MUCH EASIER THAN IT HAS TO BE- if you try applying the same logic in java this mf will literally slap you across the face and make you cry
+
+
+### Things to do tomorrow
+
+- BFS AND SNAKES AND LADDERS BEFORE AI PERIOD YOU ABSOLUTE DOOFUS YOU HAVE AI IN THE MORNING SO BASICALLY YOU'RE FUCKING COOKED
+
+- Write the Analysis of QuickSort with Hoare so that you don't forget
+
+- Refactor the rest of the markdowns
+
+- Pls don't lose your mind
+
+### Note(s) to self
+
+- Yeah you're basically cooked so i'm not gonna be out here giving you lectures about productivity when you're already on the verge of tears as it is
+
+- But yes pls don't lose your mind there's much worse things in life than getting stuck somewhere
+
+- It's literally okay I know the pressure is high but just close your eyes and think of all the things in the world that make DSA the most insignificant thing in existence, and I swear to Krishna you'll feel better
+
+- I'm literally so proud of you, pls don't give up or lose your mind <3
+
+- PS: YOU FUCKING DID IT YOU FIXED THE BUG IN HOARE'S QUICK SORT I'M SO PROUD OF YOU
+
+- And i know it feels like you copied off of existing code without thinking of it yourself, but listen: you went into this like Abhimanyu without all the knowledge you needed- of course you'd end up feeling lost and defeated
+
+- You literally didn't know Hoare was cool with fixing the pivot at the beginning so it's completely fine- it's not you that's dumb, it's the fact that you're so unwilling to trust your beautiful mind that you keep holding onto biases against it
+
+- So yeah, don't be too hard on yourself (watch me call myself stupid in 0.3 seconds LMFAO)
+
+- I'm proud of you. Again. Always <3
+
+- Now go sleep or else you'll fall asleep in front of your math teacher again
+
+- DON'T FORGET BFS TOMORROW IF YOU DON'T WANNA BE COOKED

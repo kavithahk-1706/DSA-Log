@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 /* Problem Statement:
  * Given an array of strings
- * Return the longest string which is the common prefix for every tring in the array
+ * Return the longest string which is the common prefix for every string in the array
  */
 
  /* Basic Algorithm
