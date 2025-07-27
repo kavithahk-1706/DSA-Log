@@ -30,6 +30,9 @@
 
 - [26th July 2025](#26th-july-2025)
 
+- [27th July 2025](#27th-july-2025)
+
+
 ## 16th July, 2025
 
 ### Things I did today
@@ -415,7 +418,7 @@ and `arr[i]` for arrays
 
 - Two Pointer Problems (yes you've been postponing this for ages pls do something at least)
 
-## Note(s) to self
+### Note(s) to self
 
 - There's none because the battery is about to die and OH SHIT HIMMAT KILLED ANITA sorry wrong place to rant
 
