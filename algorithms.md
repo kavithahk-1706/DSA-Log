@@ -12,6 +12,7 @@
 
 - [Binary Search - First & Last Occurrence](#binary-search---first--last-occurrence-iterative-under-algorithms)
 
+- [Quick Sort with Lomuto's Division](#quick-sort-with-lomutos-division-under-algorithms)
 
 
 ## [__Merge Sort__ _(under Algorithms/)_](Algorithms/MergeSortAlg.java)
