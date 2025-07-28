@@ -142,7 +142,7 @@
     - Usually for real world cases, __iterative__ binary search is preferred over recursive because of how it saves space due to the absence of memory-eating recursive stack functions.
 
 
-## [__Quick Sort with Lomuto's Division__](Algorithms/QuickSortAlg_Lomuto.java)
+## [__Quick Sort with Lomuto's Division__ _(under Algorithms/)_](Algorithms/QuickSortAlg_Lomuto.java)
 
 - *__Design:__ Divide and Conquer*
 
