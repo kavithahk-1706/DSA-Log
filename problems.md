@@ -20,9 +20,18 @@
 
 - This involves iterating over a range and recording seen elements in an unsorted hash map to enable quick lookup O(1).
 
-- Some implementations use a two-pass hash map, which basically means storing and searching in two different trials.
-    
-- This works but is less efficient and slower than the approach used here (one-pass hash map) as in our case, both storing and searching take place in a single loop.
+- Some implementations use a two-pass hash map, which basically means storing and searching in two different trials. This works but is less efficient and slower than the approach used here (one-pass hash map) as in our case, both storing and searching take place in a single loop.
+
+### ___Basic Algorithm___
+
+- Use a hash map to keep track of elements and indexes.
+
+- For each iteration store the complement of the target value as target-current element.
+
+- Search for complement in the hash map.
+
+- If it exists, return an array of the current element's index and the complement's index.
+
     
 ### *__Time Complexity:__ O(n)*
 
