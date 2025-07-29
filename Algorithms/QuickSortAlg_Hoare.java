@@ -6,7 +6,7 @@ import java.util.*;
  * Traverse as long as the range is valid, i.e, while(i<j)
  * If any element at i>=pivot or any element at j<=pivot, it means it's not where it's supposed to be
  * So while the range is still valid, swap the two elements
- * Once the range becomes invalid, i.e, i==j or i>j, return right as the point of partition
+ * Once the range becomes invalid, i.e, i==j or i>j, return j as the point of partition
  * Recursively call quickSort for the left sub array and the right sub array INCLUDING point of partition
  * Continue the recursion until the base case is hit, i.e., the number of elements is 1
  */

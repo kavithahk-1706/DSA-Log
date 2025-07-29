@@ -287,7 +287,7 @@
         
     - All elements to the right of pivot are greater than or equal to it.
     
-- Once the range becomes invalid, i.e, `i==j` or `i>j`, return right as the point of partition.
+- Once the range becomes invalid, i.e, `i==j` or `i>j`, return j as the point of partition.
     
 - Recursively call quickSort for the left sub array and the right sub array INCLUDING point of partition.
     
@@ -367,7 +367,7 @@
             }while(arr[i]<pivotVal);
 
             do{
-                j++;
+                j--;
             }while(arr[j]>pivotVal);
 
             if(i>=j){
