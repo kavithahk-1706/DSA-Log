@@ -34,9 +34,12 @@
 
 - [28th July 2025](#28th-july-2025)
 
+- [29th July 2025](#29th-july-2025)
+
 
 
 ## 16th July, 2025
+> __[Go back to Log Index](#log-index)__
 
 ### Things I did today
 
@@ -78,12 +81,13 @@ and `arr[i]` for arrays
 
         
 ## 17th July 2025
+> __[Go back to Log Index](#log-index)__
 
 ### Things I did today
 
 - [__QuickSort with Lomuto's Division__ _(under Algorithms/)_](Algorithms/QuickSortAlg_Lomuto.java)
 
-    - [_**Notes:** algorithms.md/Quick Sort with Lomuto's Division_](algorithms.md/#quick-sort-with-lomutos-division)
+    - [_**Notes:** algorithms.md/Quick Sort with Lomuto's Division_](algorithms.md/#quick-sort-with-lomutos-division-under-algorithms)
 
 
 ### Key Takeaways
@@ -110,6 +114,7 @@ and `arr[i]` for arrays
 - Please don't be so hard on yourself. You're not stupid just because you compared an index to a value. You're just tired. So go tf to sleep before you sleep in math class again tomorrow <3
 
 ## 18th July 2025
+> __[Go back to Log Index](#log-index)__
 
 ### Things I did today
 - __Started 3sum__ but didn't finish it; will update tomorrow
@@ -134,6 +139,7 @@ and `arr[i]` for arrays
         
 
 ## 19th July 2025
+> __[Go back to Log Index](#log-index)__
 
 ### Things I did today
 - [__Three Sum Problem with Merge Sort__ _(under Problems/)_](Problems/ThreeSum_MergeSort.java)
@@ -162,6 +168,7 @@ and `arr[i]` for arrays
 - It's very easy to quit, but it'll be difficult to start again when you do. And you'll regret it more than anyone for sure. So please hold on. It'll all be worth it <3
 
 ## 20th July 2025
+> __[Go back to Log Index](#log-index)__
 
 ### Things I did today
 - __Started 3Sum Closest__ but didn't finish, will update tomorrow
@@ -194,6 +201,7 @@ and `arr[i]` for arrays
 - So yeah, please fix your sleep schedule _(and your back, it feels like it might fold into a lawn chair any minute now)_ and take care of yourself <3 
 
 ## 21st July 2025
+> __[Go back to Log Index](#log-index)__
 
 ### Things I did today
 - [__Three Sum Closest__ _(under Problems/)_](Problems/ThreeSum_Closest.java)
@@ -234,6 +242,7 @@ and `arr[i]` for arrays
 - I'm kinda disappointed in you today but I leave a heart every day so here you go <3 good night. Hope you spend your time better tomorrow.
 
 ## 22nd July 2025
+> __[Go back to Log Index](#log-index)__
 
 ### Things I did today
 - Re-formatted [___`progress.md`___](progress.md) and [___`README.md`___](README.md) _(now it looks like I have my life put together YAY)_
@@ -271,10 +280,11 @@ and `arr[i]` for arrays
 - I'm proud of you, really. Okay gn now before you get scolded <3
 
 ## 23rd July 2025
+> __[Go back to Log Index](#log-index)__
 
 ### Things I did today
 
-- Fixed/added the following:
+#### Fixed/added the following:
 
 - [__Binary Search (Recursive)__ _(under Algorithms/)_](Algorithms/BinarySearch_Recursive.java)
 
@@ -314,6 +324,7 @@ and `arr[i]` for arrays
 - Goodnight sleeptight <3
 
 ## 24th July 2025
+> __[Go back to Log Index](#log-index)__
 
 ### Things I did today
 
@@ -345,6 +356,7 @@ and `arr[i]` for arrays
 - Sleep early tonight <3
 
 ## 25th July 2025
+> __[Go back to Log Index](#log-index)__
 
 ### Things I did today
 
@@ -399,6 +411,7 @@ and `arr[i]` for arrays
 - Pls go to sleep i beg u <3
 
 ## 26th July 2025
+> __[Go back to Log Index](#log-index)__
 
 ### Things I did today
 
@@ -435,33 +448,39 @@ and `arr[i]` for arrays
 
 
 ## 27th July 2025
+> __[Go back to Log Index](#log-index)__
 
 ### Things I did today
 
-- [__Quick Sort using Hoare's Division__ _(under Algorithms/)_](algorithms/QuickSortAlg_Hoare.java)
+- [__Quick Sort using Hoare's Division__ _(under Algorithms/)_](Algorithms/QuickSortAlg_Hoare.java)
+
+    - [_**Notes:** algorithms.md/Quick Sort with Hoare's Division_](algorithms.md/#quick-sort-with-hoares-division-under-algorithms)
+
 
 - Started BFS but didn't finish, will finish tomorrow
 
 ### Key Takeaways
-- __BFS:__
-    - BFS uses queues because it allows us to keep tracking the parents and appending the children/neighbors at the same time
 
-    - If you used a stack (like in DFS) you'd basically pop an element, append its children, then pop the last child you just appended and append its children and so on, which leads you down the rabbit hole of one single path and not all of them
+#### BFS
+- BFS uses queues because it allows us to keep tracking the parents and appending the children/neighbors at the same time
 
-    - This doesn't guarantee that you reach the shortest path first, which is the whole point of BFS.
+- If you used a stack (like in DFS) you'd basically pop an element, append its children, then pop the last child you just appended and append its children and so on, which leads you down the rabbit hole of one single path and not all of them
 
-    - With queues, you consider elements on the same level one after the other, and append their children only if the target is not yet found. This makes sure that as soon as we reach the target, we can stop our traversal and return the shortest path
+- This doesn't guarantee that you reach the shortest path first, which is the whole point of BFS.
 
-    - Snakes and Ladders is a great example of this
+- With queues, you consider elements on the same level one after the other, and append their children only if the target is not yet found. This makes sure that as soon as we reach the target, we can stop our traversal and return the shortest path
 
-- __Hoare and Quick Sort:__
-    - Hoare's Quick Sort IS A BITCH because it doesn't guarantee that the pivot is in its final position, so the element you return might as well fuck up your entire recursive case by returning the same range every single time
+- Snakes and Ladders is a great example of this
 
-    - I finally understood the point of do-while loops; in the context of Hoare's Division they make sure that the range in the recursive call is NEVER THE SAME because the increment/decrement of pointers i & j will happen AT LEAST ONCE irrespective of the condition
+#### Hoare and Quick Sort
 
-    - This'll make sure that each recursive range is always lesser than the one before, so no stack overflow errors from hell
+- Hoare's Quick Sort IS A BITCH because it doesn't guarantee that the pivot is in its final position, so the element you return might as well fuck up your entire recursive case by returning the same range every single time
 
-    - Oh and DON'T EVER TRY TO IMPLEMENT ANYTHING IN JAVA SOLELY BASED ON ITS LOGIC IN PYTHON BECAUSE PYTHON IS A FUCKING ANGEL AND MAKES EVERYTHING SO MUCH EASIER THAN IT HAS TO BE- if you try applying the same logic in java this mf will literally slap you across the face and make you cry
+- I finally understood the point of do-while loops; in the context of Hoare's Division they make sure that the range in the recursive call is NEVER THE SAME because the increment/decrement of pointers i & j will happen AT LEAST ONCE irrespective of the condition
+
+- This'll make sure that each recursive range is always lesser than the one before, so no stack overflow errors from hell
+
+- Oh and DON'T EVER TRY TO IMPLEMENT ANYTHING IN JAVA SOLELY BASED ON ITS LOGIC IN PYTHON BECAUSE PYTHON IS A FUCKING ANGEL AND MAKES EVERYTHING SO MUCH EASIER THAN IT HAS TO BE- if you try applying the same logic in java this mf will literally slap you across the face and make you cry
 
 
 ### Things to do tomorrow
@@ -500,6 +519,7 @@ and `arr[i]` for arrays
 
 
 ## 28th July 2025
+> __[Go back to Log Index](#log-index)__
 
 ### Things i did today
 
@@ -521,8 +541,11 @@ and `arr[i]` for arrays
 ### Things to do tomorrow
 
 - Quicksort Hoare Notes
+
 - Refactoring & Reformatting
+
 - Two Pointer Problems
+
 - BFS and Snakes and Ladders
 
 ### Note(s) to self
@@ -536,3 +559,14 @@ and `arr[i]` for arrays
 - I know slow is frustrating, but it's better than speed and regret. Just make sure you don't go slow to the point where you lose patience and end up stopping this altogether 
 
 - So yeah, get some rest today- i know you're tired. Still proud of you <3
+
+## 29th July 2025
+> __[Go back to Log Index](#log-index)__
+
+### Things I did today
+
+- Updated [__Notes on Quick Sort with Hoare's Division__ _(under 27th July, 2025, progress.md)_](#things-i-did-today-11)
+
+- Reformatted some stuff (i don't remember what, there were loads of merge conflicts T__T)
+
+- Added links back to indexes for easy navigation

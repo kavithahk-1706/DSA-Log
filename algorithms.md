@@ -8,13 +8,20 @@
 
 - [Binary Search (Recursive)](#binary-search-recursive-under-algorithms)
 
-- [Binary Search (Iterative)](#--binary-search-iterative-under-algorithms)
+- [Binary Search (Iterative)](#binary-search-iterative-under-algorithms)
 
 - [Binary Search - First & Last Occurrence](#binary-search---first--last-occurrence-iterative-under-algorithms)
+
+- [Quick Sort with Lomuto's Division](#quick-sort-with-lomutos-division-under-algorithms)
+
+- [Quick Sort with Hoare's Division](#quick-sort-with-hoares-division-under-algorithms)
+
+- [Some extra notes on Quick Sort - Lomuto vs Hoare](#some-extra-notes-on-quick-sort-lomuto-vs-hoare)
 
 
 
 ## [__Merge Sort__ _(under Algorithms/)_](Algorithms/MergeSortAlg.java)
+> ___[Go back to Index](#index)___
 
 ### *__Design:__ Divide and Conquer*
 
@@ -22,25 +29,25 @@
 
 ### ___Basic Algorithm:___
     
--  Use two functions, mergeSort and merge
+-  Use two functions, mergeSort and merge.
 
-- To handle the dividing and merging parts of the technique respectively
+- To handle the dividing and merging parts of the technique respectively.
 
-- The mergeSort function recursively calls itself for the left and right halves of the array
+- The mergeSort function recursively calls itself for the left and right halves of the array.
 
-- Each half is recursively divided into subsequent halves until there is one element left
+- Each half is recursively divided into subsequent halves until there is one element left.
 
-- Then the merge function is executed to merge the two sub arrays obtained at every level after comparing elements
+- Then the merge function is executed to merge the two sub arrays obtained at every level after comparing elements.
 
-- Temp arrays are used to store the left and right sorted sub arrays, but the final array is sorted in the same variable
+- Temp arrays are used to store the left and right sorted sub arrays, but the final array is sorted in the same variable.
 
-- Since we're using auxiliary space, it is not inplace
+- Since we're using auxiliary space, it is not inplace.
     
 ### *__Time Complexity:__ O(n log n)*
 
-- The `mergeSort` logic uses a `log n` time complexity to recursively divide the array into two halves until the number of elements is 1
+- The `mergeSort` logic uses a `log n` time complexity to recursively divide the array into two halves until the number of elements is 1.
 
-- The `merge` logic iterates `n` times to combine the two sorted sub arrays after comparison
+- The `merge` logic iterates `n` times to combine the two sorted sub arrays after comparison.
 
 - Since the array is divided `log n` times and the divisions are merged `n` times at each level, the total time complexity becomes __O(n log n).__
 
@@ -55,6 +62,8 @@
 - As in the asymptotic notation, we consider only the greater element of the time/space complexity, __the actual space complexity of O(n + log n) gets reduced to O(n) as n>log n.__
 
 ## [__Binary Search (Recursive)__ _(under Algorithms/)_](Algorithms/BinarySearch_Recursive.java)
+> ___[Go back to Index](#index)___
+
 
 ### *__Design:__ Divide and Conquer*
 
@@ -104,6 +113,8 @@
 
 
 ## [__Binary Search (Iterative)__ _(under Algorithms/)_](Algorithms/BinarySearch_Iterative.java)
+> ___[Go back to Index](#index)___
+
 
 ### *__Design:__ Divide and Conquer*
 
@@ -123,7 +134,7 @@
     
     - This is why we use `right=mid-1` to shrink the portion of the array we'll be checking, so that it only contains elements that are less than the middle element.
         
-- If `__(target>arr[mid]):__` 
+- If `(target>arr[mid]):` 
     
     - Since the array is sorted, `target>arr[mid]` implies that the target will be to the right of mid. 
     
@@ -145,6 +156,8 @@
     
 
 ## [__Binary Search - First & Last Occurrence (Iterative)__ _(under Algorithms/)_](Algorithms/BinarySearch_FirstnLastOccurrence.java)
+> ___[Go back to Index](#index)___
+
 
 ### *__Design:__ Divide and Conquer*
 
@@ -190,7 +203,9 @@
 - Usually for real world cases, __iterative__ binary search is preferred over recursive because of how it saves space due to the absence of memory-eating recursive stack functions.
 
 
-## [__Quick Sort with Lomuto's Division__](Algorithms/QuickSortAlg_Lomuto.java)
+## [__Quick Sort with Lomuto's Division__ *(under Algorithms/)*](Algorithms/QuickSortAlg_Lomuto.java)
+> ___[Go back to Index](#index)___
+
 
 ### *__Design:__ Divide and Conquer*
 
@@ -236,31 +251,23 @@
 
 ### *__Space Complexity:__ O(log n) for good pivot and O(n) for bad pivot*
 
-- *__O(log n)__ (When the pivot choice is good):*
+#### *__O(log n)__ (When the pivot choice is good)*
 
-    - Quick Sort is an in-place algorithm as it does not use any auxiliary space to sort the array.
+- Quick Sort is an in-place algorithm as it does not use any auxiliary space to sort the array.
 
-    - The only space taken up is the space of the recursive stack, which has log n recursive calls stored in it, considering the pivot choice is good.
+- The only space taken up is the space of the recursive stack, which has log n recursive calls stored in it, considering the pivot choice is good.
 
-    - Thus, the total space complexity is __O(log n)__.
+- Thus, the total space complexity is __O(log n)__.
     
-- *__O(n)__ (When the pivot choice is bad):*
+#### *__O(n)__ (When the pivot choice is bad)*
 
-    - If the pivot choice is bad, i.e, either the largest/smallest element, then the number of recursive calls will be extended to n, as you'd approximately be executing n number of functions just to get to the base case, i.e, the length of elements being 1.
+- If the pivot choice is bad, i.e, either the largest/smallest element, then the number of recursive calls will be extended to n, as you'd approximately be executing n number of functions just to get to the base case, i.e, the length of elements being 1.
 
-    - Thus, in the worst case, the space complexity becomes __O(n)__.
+- Thus, in the worst case, the space complexity becomes __O(n)__.
 
-### Some extra note(s):
 
-- There are two main techniques used in Quick Sort to perform divisions/partitions based on the pivot element: Lomuto's method (the above) and [Hoare's method](#quick-sort-with-hoares-division).
-
-- Both lead to the same time and space complexity (given above), but the latter is considered more efficient.
-
-- While Lomuto's method is easy to implement, it performs unnecessary swaps at every step where the current element is less than the pivot, leading to reduced efficiency.
-
-- In practice, [__Hoare's Method of Division__](#quick-sort-with-hoares-division) is preferred due to its reduced number of swappings, as it only performs swaps when necessary.
-
-## [__Quick Sort with Hoare's Division__](Algorithms/QuickSortAlg_Hoare.java)
+## [__Quick Sort with Hoare's Division__ _(under Algorithms/)_](Algorithms/QuickSortAlg_Hoare.java)
+> ___[Go back to Index](#index)___
 
 ### *__Design:__ Divide and Conquer*
 
@@ -288,102 +295,122 @@
 
 ### *__Time Complexity:__ O(n log n) for good pivot and O(n^2) for bad pivot*
 
-- Same as above.
+- Same as [Quick Sort With Lomuto's Division](#time-complexity-on-log-n-for-good-pivot-and-on2-for-bad-pivot).
 
-- *__Space Complexity:__ O(log n) for good pivot and O(n) for bad pivot*
 
-    - Same as above
+### *__Space Complexity:__ O(log n) for good pivot and O(n) for bad pivot*
 
-- ___Some extra note(s)___
+- Same as [Quick Sort With Lomuto's Division](#space-complexity-olog-n-for-good-pivot-and-on-for-bad-pivot).
 
-    - Hoare's method typically fixes the pivot at the beginning, but it doesn't bring it to its final position.
+## ___Some extra note(s) on Quick Sort: Lomuto vs Hoare___
+> ___[Go back to Index](#index)___
 
-    - Unlike Lomuto's method where the returned element is the pivot's final position, Hoare's method doesn't guarantee that the index returned is the pivot; it's just a point of partition.
+### ___1. Pivot Fixing___
 
-    - That's why Lomuto's method doesn't include the point of partition in recursive calls; because it's already in its final position. In contrast, Hoare's method includes the point of partition in recursive calls.
+- Hoare's method typically fixes the pivot at the beginning, but it doesn't bring it to its final position.
 
-    - Lomuto's method __also guarantees that each the base case is reached__, i.e, the number of elements in the array being sorted becomes 1 at some point. Because we exclude the point of partition in both the left and right recursive calls, __effectively reducing the sub arrays' length at each level__.
+- Unlike Lomuto's method where the returned element is the pivot's final position, Hoare's method doesn't guarantee that the index returned is the pivot; it's just a point of partition.
 
-    - However, Hoare's method __doesn't guarantee that the sub arrays decrease in length__ because the pivot isn't brought to its final position in this method. This means the function could very likely perform the recursive calls with the same sub array length at every level.
+- That's why Lomuto's method doesn't include the point of partition in recursive calls; because it's already in its final position. In contrast, Hoare's method includes the point of partition in recursive calls.
+
+### ___2. Base Case Hit___
+
+- Lomuto's method __guarantees that each the base case is reached__, i.e, the number of elements in the array being sorted becomes 1 at some point. Because we exclude the point of partition in both the left and right recursive calls, __effectively reducing the sub arrays' length at each level__.
+
+- However, Hoare's method __doesn't guarantee that the sub arrays decrease in length__, because the pivot isn't brought to its final position in this method. This means the function could very likely perform the recursive calls with the same sub array length at every level.
     
-    - Thus, not being careful with the conditions __could lead to a stack overflow error__ caused by the recursive function never hitting the base case.
+- Thus, not being careful with the conditions __could lead to a stack overflow error__ caused by the recursive function never hitting the base case.
 
-    - To prevent this, __we use do-while loops__ to ensure that __even if the conditions are false to begin with__, the pointers shorten the range of elements to be sorted __at least once__. 
+### ___3. The role of do-while loops in Hoare's Division___
+
+- To prevent stack overflow errors in Hoare's Division, __we use do-while loops__ to ensure that __even if the conditions are false to begin with__, the pointers shorten the range of elements to be sorted __at least once__. 
     
-    - This makes sure that the length of the sub arrays in the recursive calls is never the same.
+- This makes sure that the length of the sub arrays in the recursive calls is never the same.
 
-    - As __do-while is an exit loop__, it makes sure to __execute the statements at least once__ before checking the condition. Then if it happens to be false, it exits after
+- As __do-while is an exit loop__, it makes sure to __execute the statements at least once__ before checking the condition. Then if it happens to be false, it exits after
 
-    - This __cannot be achieved with while loops__ since they're entry loops and check the condition before entering the block of statements, thereby __skipping the increment/decrement functions entirely__ if the condition is false from the beginning.
+- This __cannot be achieved with while loops__ since they're entry loops and check the condition before entering the block of statements, thereby __skipping the increment/decrement functions entirely__ if the condition is false from the beginning.
 
-    - This makes __do-while loops very very important and crucial__ in situations like this.
+- This makes __do-while loops very very important and crucial__ in situations like this.
 
+### ___4. Why Hoare's division is better than Lomuto's___
 
-    - While Hoare's partition doesn't bring the actual time complexity down, it does save time by preventing unnecessary swaps.
+- While Hoare's division doesn't bring the actual time complexity down, it does save time by preventing unnecessary swaps.
 
-    - In __[Lomuto's Division](Algorithms/QuickSortAlg_Lomuto.java)__, we have two pointers: one traverses (j) while the other keeps track of elements less than the pivot (i). This means that for half the array, both the pointers are concentrated in the left half only, effectively increasing the time spent there.
+#### ___Lomuto's Division___
+
+- In __[Lomuto's Division](Algorithms/QuickSortAlg_Lomuto.java)__, we have two pointers: one traverses (j) while the other keeps track of elements less than the pivot (i). This means that for half the array, both the pointers are concentrated in the left half only, effectively increasing the time spent there.
     
-    - We also do this:
+- We also do this:
 
-            for(int j=low; j<high-1; j++){
-                if(arr[j]<pivotValue){
-                    i++;
+        for(int j=low; j<high-1; j++){
+            if(arr[j]<pivotValue){
+                i++;
                     swap(arr,i,j);
                 }
             }
     
-    - This means that even if there are instances where `i==j`, the swapping will still happen even when totally unnecessary.
+- This means that even if there are instances where `i==j`, the swapping will still happen even when totally unnecessary.
 
-    - It also doesn't work well when there are many duplicates of a single element.
+- It also doesn't work well when there are many duplicates of a single element.
 
-    - In __[Hoare's Division](Algorithms/QuickSortAlg_Hoare.java)__, the two pointers start from two different ends of the array _(i from the left and j from the right)_, meaning the checking and traversal is well distributed. 
+#### ___Hoare's Division___
+
+- In __[Hoare's Division](Algorithms/QuickSortAlg_Hoare.java)__, the two pointers start from two different ends of the array _(i from the left and j from the right)_, meaning the checking and traversal is well distributed. 
     
-    - Also, we do this:
+- Also, we do this:
 
-            while(true){
+        while(true){
 
-                do{
-                    i++;
-                }while(arr[i]<pivotVal);
+            do{
+                i++;
+            }while(arr[i]<pivotVal);
 
-                do{
-                    j++;
-                }while(arr[j]>pivotVal);
+            do{
+                j++;
+            }while(arr[j]>pivotVal);
 
-                if(i>=j){
-                    return j;
-                }
-
-                swap(arr,i,j);
+            if(i>=j){
+                return j;
             }
+
+            swap(arr,i,j);
+        }
     
-    - As a result, you'll notice that the swapping takes place __only when i and j come out of the do-while loops__ _(responsible for their respective increments/decrements)_, __provided the range is still valid__ _(i<j)_. 
+- As a result, you'll notice that the swapping takes place __only when i and j come out of the do-while loops__ _(responsible for their respective increments/decrements)_, __provided the range is still valid__ _(i<j)_. 
     
-    - In other words, __the swapping will only happen if__
+- In other words, __the swapping will only happen if__
 
-        - `arr[i]>pivotVal`, i.e, the left pointer finds an element greater than pivotVal
+    - `arr[i]>pivotVal`, i.e, the left pointer finds an element greater than pivotVal
 
-        - `arr[j]<pivotVal`, i.e, the right pointer finds an element less than pivotVal
+    - `arr[j]<pivotVal`, i.e, the right pointer finds an element less than pivotVal
 
-        - `i<j`, i.e, the range is still valid 
+    - `i<j`, i.e, the range is still valid 
     
-    - This __eliminates the possibility for the same element to be swapped with itself__ just because it happens to be less than the pivot, thus saving time and making the partition logic a lot more elegant.
+- This __eliminates the possibility for the same element to be swapped with itself__ just because it happens to be less than the pivot, thus saving time and making the partition logic a lot more elegant.
 
-    - This also makes it great with handling multiple duplicates of the same element.
+- This also makes it great with handling multiple duplicates of the same element.
 
-    - The reason why the time complexity isn't affected by this efficiency is because on the whole, __the partition logic still happens to be non-recursive__ in both cases. It's used in by each recursive call, but that doesn't make the partition function itself recursive.
+### ___5. Why the Time Complexity remains the same in both cases despite Hoare's efficiency___
 
-    - Also, the asymptotic notation is a gross approximation of all the operations that take place in an algorithm. 
+- The reason why the time complexity isn't affected by Hoare's efficiency is because on the whole, __the partition logic still happens to be non-recursive__ in both cases. It's used in by each recursive call, but that doesn't make the partition function itself recursive.
+
+- Also, the asymptotic notation is a gross approximation of all the operations that take place in an algorithm. 
     
-    - For example, n operations and 1000*n operations on the same level are both treated as a time complexity of O(n).
+- For example, n operations and 1000*n operations on the same level are both treated as a time complexity of O(n).
     
-    - So the swaps saved by Hoare's method get hidden due to this approximation.
+- So the swaps saved by Hoare's method get hidden due to this approximation.
 
-    - As a result the time complexity it takes up is still on average O(n) for both cases, while the recursive calls take up an O(log n).
+- As a result the time complexity it takes up is still on average O(n) for both cases, while the recursive calls take up an O(log n).
 
-    - Thus, the total time complexity is still O(n log n) for both.
+- Thus, the total time complexity is still O(n log n) for both.
 
-    - Lomuto's division is preferred when simplicity of logic is prioritized, while Hoare's division is preferred when efficiency and elegance in real-world scenarios is preferred.
+
+### ___6. Use Cases for Each___
+
+- Lomuto's division is preferred when simplicity of logic is prioritized.
+
+- Hoare's division is preferred when efficiency and elegance in real-world scenarios is prioritized.
 
      
 

@@ -11,6 +11,7 @@
 
 
 ## [__Two Sum__ _(under Problems/)_](Problems/TwoSum.java)
+> ___[Go back to Index](#index)___
 
 ### *__Problem Statement__*  
 
@@ -53,8 +54,9 @@
     
         
 ## [__Longest Common Prefix__ _(under Problems/)_](Problems/LongestStrPrefix.java)
+> ___[Go back to Index](#index)___
 
-### *__Problem Statement:__*
+### *__Problem Statement__*
 
 - Given an array of strings, return the longest string which is the common prefix for every string in the array.
 
@@ -64,7 +66,7 @@
 
 - Other approaches like Vertical Scanning, Divide and Conquer, etc., exist but Horizontal Scanning is the best here for most real-world inputs.
 
-### __Basic Algorithm:__
+### __Basic Algorithm__
  
 - Iterate over the letters in the first word of the array.
     
@@ -88,7 +90,7 @@
 
 - In the worst case that __the first string is the prefix to be returned__, the string will be of length m, giving us a __space complexity of O(m)__.
 
-### Some extra notes:
+### Some extra notes
 
 - Use `str.charAt(index)` for Strings instead of `str[index]` _(it's not like Python)_.
 
