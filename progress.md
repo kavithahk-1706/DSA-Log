@@ -32,6 +32,8 @@
 
 - [27th July 2025](#27th-july-2025)
 
+- [28th July 2025](#28th-july-2025)
+
 
 
 ## 16th July, 2025
@@ -495,3 +497,42 @@ and `arr[i]` for arrays
 - Now go sleep or else you'll fall asleep in front of your math teacher again
 
 - DON'T FORGET BFS TOMORROW IF YOU DON'T WANNA BE COOKED
+
+
+## 28th July 2025
+
+### Things i did today
+
+- BFS (in python, not here- will update later)
+  
+- Started snakes and ladders but couldn't finish, will try to update ASAP
+  
+- ... that's it- both laptops are busy copying old baby videos and that's a top priority so
+
+### Key Takeaways
+
+- BFS isn't as easy as it seems
+
+- Haven't figured out the error causing the mismatches in s&l, but it's most likely due to incorrect/vague conditions for the randomised positions of the snakes and ladders across the board
+
+- The visited set can be a dictionary too save space and store the path by assigning the value of each node in the dictionary as the predecessor from which it came from.
+
+
+### Things to do tomorrow
+
+- Quicksort Hoare Notes
+- Refactoring & Reformatting
+- Two Pointer Problems
+- BFS and Snakes and Ladders
+
+### Note(s) to self
+
+- Now that you found the video you were looking for you can continue with your usual progress without the problem of laptop unavailability
+
+- So yeah today's excused but don't make it a habit
+
+- Just because you didn't push code to GitHub doesn't mean you didn't do anything- you still cried over snakes and ladders didn't you? So that still counts as progress
+
+- I know slow is frustrating, but it's better than speed and regret. Just make sure you don't go slow to the point where you lose patience and end up stopping this altogether 
+
+- So yeah, get some rest today- i know you're tired. Still proud of you <3
