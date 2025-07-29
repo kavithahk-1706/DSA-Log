@@ -8,6 +8,7 @@
 
 - [Longest Common Prefix](#longest-common-prefix-under-problems)
 
+- [Remove Duplicates from Sorted Array](#remove-duplicates-from-sorted-array-under-problems)
 
 
 ## [__Two Sum__ _(under Problems/)_](Problems/TwoSum.java)
@@ -95,3 +96,49 @@
 - Use `str.charAt(index)` for Strings instead of `str[index]` _(it's not like Python)_.
 
 - Use `StringBuilder` for lesser TC; convert a `StringBuilder` to `String` using `.toString()`.
+
+## [__Remove Duplicates from Sorted Array__ _(under Problems/)_](Problems/Remove_Duplicates_Sorted.java)
+> ___[Go back to Index](#index)___
+
+### *__Problem Statement__*
+
+- Given a sorted array, remove duplicates in place and return the length of the array without it. 
+
+- The elements beyond this index do not matter, as long as before the index the elements are sorted and have no duplicates.
+
+### *__Design:__ Two Pointer Approach*
+- The Two Pointer Approach involves two pointers/variables that perform two different functions so as to reduce/optimize the overall traversal to solve the problem.
+
+### *__Basic Algorithm__*
+- Use two pointers, one for traversing and one for storing the positions that need to be overwritten.
+
+- Traverse from 1 to end as the first element isn't a duplicate.
+
+- If at any point the current element is not equal to the previous element, the current element is unique, so it needs to be copied into the duplicate's position, stored at overwrite_index.
+
+- Sometimes if both pointers are equal, the element will overwrite itself, but this doesn't affect the rest of the algorithm.
+
+- When duplicates actually exist, the overwrite_index is not incremented. This will ensure that these duplicates are overwritten as well.
+
+- At the end of the traversal, the overwrite_index will store the number of elements which are unique, as all the elements before it are free of duplicates.
+
+- Return overwrite_index.
+
+### *__Time Complexity:__ O(n)*
+
+- The algorithm involves a loop that iterates over the range of elements in the array, and all the overwriting takes place within n iterations only.
+
+- Thus, the time complexity is just __O(n)__.
+
+### *__Space Complexity:__ O(1)*
+
+- There's no auxiliary space used here, except for the indexes which take up constant space. Thus, the space complexity is __O(1)__.
+
+### ___Some extra notes___
+
+- Brute force involves iterating over the array for each element in order to search for duplicates; in other words, a nested loop. This gives a time complexity of __O(n^2)__ which is very slow.
+
+- Two Pointer Approach helps optimize this as there's no need to iterate over the array n number of times for each element when we could just use two variables to store the positions that need to be overwritten.
+
+- There's a lot of cases where a nested loop brute force can be optimized using two pointers.
+

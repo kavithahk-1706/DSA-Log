@@ -250,6 +250,8 @@ and `arr[i]` for arrays
 - [__Remove Duplicates in a Sorted Array__ _(Under Problems/)_
 ](Problems/Remove_Duplicates_Sorted.java) 
 
+    - [*__Notes:__ problems.md/Remove Duplicates from Sorted Array*](problems.md/#remove-duplicates-from-sorted-array-under-problems)
+
 ### Key Takeaways
 
 - [__Remove Duplicates in a Sorted Array__ _(Under Problems/)_
@@ -569,6 +571,40 @@ and `arr[i]` for arrays
 
 - [__Some extra notes on Quick Sort - Lomuto vs Hoare__ _(under algorithms.md)_](algorithms.md/#some-extra-notes-on-quick-sort-lomuto-vs-hoare)
 
+- Updated [__Notes on Remove Duplicates from Sorted Array__ _(under 22nd July, 2025, progress.md)_](#things-i-did-today-6)
+
+- [__Remove Element from Unsorted Array__ _(under Problems/)_](Problems/Remove_Element_Unsorted.java)
+
 - Reformatted some stuff (i don't remember what, there were loads of merge conflicts T__T)
 
 - Added links back to indexes for easy navigation
+
+### Key Takeaways
+
+- Two Pointer is pretty intuitive if you think hard enough
+
+- Like i said earlier, the key is to remove the prejudice that it's some sort of right and left thing; just think of them as two different variables serving two different functions
+
+- To think of the use case, most nested-loop brute force solutions can be optimized using two pointers.
+
+- Quick Sort is DONE AND DUSTED THANK YOU VERY MUCH however you might want to revise Hoare a bit by implementing it instead of Lomuto in problems
+
+### Things to do tomorrow
+
+- Some more two pointer problems
+
+- Snakes and Ladders in Python
+
+- Reformatting and Notes for remaining stuff
+
+### Note(s) to self
+
+- You did a lot today, and although most of it was passive analysis instead of active solving, that's also equally important.
+
+- Just try to solve as much as you analyse because that's how you'll develop the muscle memory to recognise patterns.
+
+- Every time you do a problem, instead of thinking 'WHY DIDN'T I THINK OF IT MYSELF', try thinking 'What's a pattern between this and things i've seen before?', and you'll soon start thinking of things yourself.
+
+- I'm proud of you today. Not just today, always. But especially today because you've done so much despite feeling tired as hell.
+
+- Get some rest <3 you deserve it

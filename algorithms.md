@@ -142,7 +142,7 @@
         
 - Continue to shrink the left/right portions of the array being checked according to the value of the target with respect to the element, until the target is found.
 
-- If the target is not found at the end of all recursive calls, return -1.
+- If the target is not found at the end of all iterations, return -1.
    
 
 ### *__Time Complexity:__ O(log n)*
