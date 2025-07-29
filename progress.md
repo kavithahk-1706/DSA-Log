@@ -567,6 +567,8 @@ and `arr[i]` for arrays
 
 - Updated [__Notes on Quick Sort with Hoare's Division__ _(under 27th July, 2025, progress.md)_](#things-i-did-today-11)
 
+- [__Some extra notes on Quick Sort - Lomuto vs Hoare__ _(under algorithms.md)_](algorithms.md/#some-extra-notes-on-quick-sort-lomuto-vs-hoare)
+
 - Reformatted some stuff (i don't remember what, there were loads of merge conflicts T__T)
 
 - Added links back to indexes for easy navigation
